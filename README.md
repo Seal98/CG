@@ -1,0 +1,1 @@
+During the implementation of this lab-work I used Python programming language and the PILLOW Image processing library.
