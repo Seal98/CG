@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Images</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+            <div class="card">
+                    <img id="img" width="250" height="150" style="display: none"/>
+                    <span>Выберите изображение:</span>
+                    <input id="input" type="file" />
+                  </div>
+                  
+                  <div class="card">
+                    <span>Яркость</span>
+                    <div>
+                      <label>
+                        <input id="rangeBrightness" type="range" min="-255" max="255" value="0" />
+                        <span id="valueBrightness">0</span>
+                      </label>
+                    </div>
+                    <span>Контраст</span>
+                    <div>
+                      <label>
+                        <input id="rangeContrast" type="range" min="-255" max="255" value="0" />
+                        <span id="valueContrast">0</span>
+                      </label>
+                    </div>
+                      <div>
+                          <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Гистограмма &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Изображение</label>
+                      </div>
+                      <canvas id="canvasHistogram" width="256" height="150"></canvas>
+                        &nbsp;
+                      <canvas id="canvasResult" height="16"></canvas>
+                  </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
