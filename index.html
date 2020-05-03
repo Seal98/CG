@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Лаб4</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="root">
+            <div class="coords">
+                <h3>Координаты</h3>
+                <h5>Х0</h5>
+                <input id="xStart" type="number" placeholder="X начала"/>
+                <h5>Y0</h5>
+                <input id="yStart" type="number" placeholder="Y начала"/>
+                <h5>X1</h5>
+                <input id="xEnd" type="number" placeholder="X конца"/>
+                <h5>Y1</h5>
+                <input id="yEnd" type="number" placeholder="Y конца"/>
+                <h5>Радиус для алгоритма Брезенхема(окружность)</h5>
+                <input id="r" type="number" placeholder="Радиус"/>
+            </div>
+            <div class="algorithm">
+                <h3>Алгоритм</h3>
+                <button onclick="stepBystep()">Пошаговый</button>
+                <button onclick="DDA()">ЦДА</button>
+                <button onclick="Bresenham()">Брезенхема</button>
+                <button onclick="BresenhamCircle()">Брезенхема(окружность)</button>
+            </div>
+            <div class="canv">
+                <canvas id="canvas" width="400" height="400"></canvas>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
