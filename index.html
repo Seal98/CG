@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Segments in raster</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="root">
+            <form>
+                <input type="file" id="CF" name="coords_file" accept="text/plain" onchange="readFile(this)"/>
+                <div class="submit-buttons">
+                    <button type="button" id="LB" onclick="LBA()">Алгоритм Лианга-Барски</button>
+                    <button type="button" id="S" value="rectanlgeAlg">Алгоритм отсечения выпуклого многоугольника</button>
+                </div>
+            </form>
+            <div class="canv">
+                <canvas id="canvas" width="400" height="400"></canvas>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
